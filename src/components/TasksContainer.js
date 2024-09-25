@@ -9,7 +9,7 @@ const TasksContainer = ({ socket }) => {
     const fetchTasks = () => {
       console.log("fetch tasks");
 
-      fetch("https://kanban-sockets.herokuapp.com/api")
+      fetch("https://kanban-backend-five.vercel.app/")
         .then((res) => res.json())
         .then((data) => {
           setTasks(data);
